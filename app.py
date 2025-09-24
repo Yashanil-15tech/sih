@@ -370,7 +370,7 @@ def main():
                             results = engine.search(query, top_k=20, min_score=0.1)
 
                     # Debug: Log search results count
-                    st.info(f"Found {len(results)} blocks matching criteria")
+                    #st.info(f"Found {len(results)} blocks matching criteria")
                     if not results:
                         answer = "No blocks found matching your criteria. Please try a different search or check if the district name is correct."
                     else:
@@ -391,7 +391,7 @@ def main():
                     st.markdown(answer)
 
                     # Display search results
-                    display_search_results(results, "search")
+                    #display_search_results(results, "search")
 
                     # Add assistant message to chat history
                     st.session_state.messages.append({"role": "assistant", "content": answer})
