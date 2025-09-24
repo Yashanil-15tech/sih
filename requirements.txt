@@ -1,0 +1,6 @@
+faiss-cpu
+elasticsearch
+pyngrok
+groq
+streamlit
+sentence-transformers
