@@ -246,7 +246,7 @@ def main():
         layout="wide"
     )
 
-    st.title("💧 Rajasthan Groundwater Intelligence")
+    st.title("💧 Groundwater Intelligence")
     st.markdown("*AI-powered groundwater data analysis*")
 
     # Initialize search engine
