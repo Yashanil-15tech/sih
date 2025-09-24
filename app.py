@@ -204,6 +204,7 @@ INSTRUCTIONS:
 5. Do not include any "does not meet criteria" statements - all data shown already meets the query criteria
 6. Use actual numbers from the data, not approximations
 7. Also include columns as asked by user from these: Rainfall (mm), Total GW (HAM), Net GW (HAM), Development (%)
+8. Make sure there are no duplicate entries in the table.
 
 GROUNDWATER CATEGORIES:
 - safe: Sustainable groundwater usage
