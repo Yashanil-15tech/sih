@@ -409,44 +409,5 @@ def main():
                     except:
                         st.error("Unable to retrieve data. Please try again.")
 
-    # Quick action buttons
-    st.markdown("---")
-    st.subheader("Quick Insights")
-
-    col1, col2, col3, col4 = st.columns(4)
-
-    with col1:
-        if st.button("High Rainfall Areas"):
-            if "auto_query" not in st.session_state:
-                st.session_state.auto_query = "blocks with rainfall above 800 mm"
-                st.rerun()
-
-    with col2:
-        if st.button("Low Rainfall Areas"):
-            if "auto_query" not in st.session_state:
-                st.session_state.auto_query = "blocks with rainfall below 400 mm"
-                st.rerun()
-
-    with col3:
-        if st.button("Critical Zones"):
-            if "auto_query" not in st.session_state:
-                st.session_state.auto_query = "over-exploited blocks"
-                st.rerun()
-
-    with col4:
-        if st.button("Safe Blocks"):
-            if "auto_query" not in st.session_state:
-                st.session_state.auto_query = "safe category blocks"
-                st.rerun()
-
-    # Handle auto-triggered queries
-    if "auto_query" in st.session_state:
-        query = st.session_state.auto_query
-        del st.session_state.auto_query
-
-        # Add to chat and process
-        st.session_state.messages.append({"role": "user", "content": query})
-        st.rerun()
-
 if __name__ == "__main__":
     main()
