@@ -204,7 +204,8 @@ INSTRUCTIONS:
 5. Do not include any "does not meet criteria" statements - all data shown already meets the query criteria
 6. Use actual numbers from the data, not approximations
 7. Also include columns as asked by user from these: Rainfall (mm), Total GW (HAM), Net GW (HAM), Development (%)
-8. Make sure there are no duplicate entries in the table.
+8. Make sure there are no duplicate entries in the table. Recheck before giving any response.
+9. Display the results in descending/ascending format.
 
 GROUNDWATER CATEGORIES:
 - safe: Sustainable groundwater usage
@@ -391,7 +392,7 @@ def main():
                     st.markdown(answer)
 
                     # Display search results
-                    #display_search_results(results, "search")
+                    display_search_results(results, "search")
 
                     # Add assistant message to chat history
                     st.session_state.messages.append({"role": "assistant", "content": answer})
